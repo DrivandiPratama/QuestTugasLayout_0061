@@ -60,6 +60,13 @@ fun CardMahasiswa(
                     fontFamily = FontFamily.Cursive,
                     color = Color.White
                 )
+
+                Text(
+                    text = stringResource(alamat),
+                    fontSize = 12.sp,
+                    color = Color.Yellow,
+                    modifier = Modifier.padding(top = 4.dp)
+                )
             }
         }
     }
