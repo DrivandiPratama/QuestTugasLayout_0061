@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -39,13 +40,16 @@ fun CardMahasiswa(
         )
     ) {
         Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(115.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
                 painter = painterResource(R.drawable.logo_umy),
                 contentDescription = null,
                 modifier = Modifier
-                    .size(65.dp)
+                    .size(105.dp)
                     .padding(5.dp)
             )
 
@@ -56,7 +60,7 @@ fun CardMahasiswa(
             ) {
                 Text(
                     text = stringResource(nama),
-                    fontSize = 18.sp,
+                    fontSize = 28.sp,
                     fontWeight = FontWeight.Bold,
                     fontFamily = FontFamily.Cursive,
                     color = Color.White
@@ -64,7 +68,7 @@ fun CardMahasiswa(
 
                 Text(
                     text = stringResource(alamat),
-                    fontSize = 12.sp,
+                    fontSize = 18.sp,
                     color = Color.Yellow,
                     modifier = Modifier.padding(top = 4.dp)
                 )
@@ -74,7 +78,7 @@ fun CardMahasiswa(
                 painter = painterResource(R.drawable.logo_umy),
                 contentDescription = null,
                 modifier = Modifier
-                    .size(55.dp)
+                    .size(95.dp)
                     .padding(4.dp)
             )
         }
