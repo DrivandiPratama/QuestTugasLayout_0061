@@ -1,6 +1,15 @@
 package com.example.myapplication
 
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun CardMahasiswa(
@@ -8,5 +17,18 @@ fun CardMahasiswa(
     alamat: Int,
     warna: Int
 ) {
+    Card(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(12.dp, vertical = 5.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = colorResource(warna)
+        )
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically
+        ) {
 
+        }
+    }
 }
