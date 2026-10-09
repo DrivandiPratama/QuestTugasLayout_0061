@@ -77,5 +77,7 @@ fun CardMahasiswa(
                     .padding(4.dp)
             )
         }
+
+        Spacer(modifier = Modifier.width(8.dp))
     }
 }
