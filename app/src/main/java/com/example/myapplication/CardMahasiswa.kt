@@ -13,9 +13,15 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import org.w3c.dom.Text
 
 @Composable
 fun CardMahasiswa(
@@ -47,7 +53,13 @@ fun CardMahasiswa(
             Column(
                 modifier = Modifier.weight(1f)
             ) {
-
+                Text(
+                    text = stringResource(nama),
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = FontFamily.Cursive,
+                    color = Color.White
+                )
             }
         }
     }
