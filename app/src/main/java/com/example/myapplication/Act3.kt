@@ -48,6 +48,12 @@ fun ActivitasPertama(modifier: Modifier) {
         )
         Spacer(modifier = Modifier.height(25.dp))
 
+        CardMahasiswa(
+            nama = R.string.nama,
+            alamat = R.string.alamat,
+            warna = R.color.card_0_bg
+        )
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
