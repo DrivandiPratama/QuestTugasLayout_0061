@@ -60,6 +60,12 @@ fun ActivitasPertama(modifier: Modifier) {
             warna = R.color.card_1_bg
         )
 
+        CardMahasiswa(
+            nama = R.string.nama_3,
+            alamat = R.string.alamat_3,
+            warna = R.color.card_2_bg
+        )
+
         Box(
             modifier = Modifier
                 .fillMaxSize()
